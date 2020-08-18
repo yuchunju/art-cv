@@ -19,18 +19,18 @@
    <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.4.456/build/pdf.min.js"></script>
    <script src="background.js"></script> 
 
-<script> 
-function changeFrameHeight(){
-    var ifm= document.getElementById("iframepage"); 
-    ifm.height=document.documentElement.clientHeight;
-
-}
-
-window.οnresize=function(){  
-     changeFrameHeight();  
-
-} 
-</script> 
+</style>
+<script type="text/javascript" language="javascript">
+ function iFrameHeight() {
+  var ifm = document.getElementById("iframepage");
+  var subWeb = document.frames ? document.frames["iframepage"].document
+    : ifm.contentDocument;
+  if (ifm != null && subWeb != null) {
+   ifm.height = subWeb.body.scrollHeight;
+  }
+ }
+</script>
+ 
 
 </head>
 
@@ -45,10 +45,13 @@ window.οnresize=function(){
  
  
 <div class="main" id="content" style="background-color:#99CCFF" >
-<iframe id="myiframe" 
-        frameborder="0" 
-        scrolling="yes" 
-        style="width:100%;height:30rem" 
+<iframe id="iframepage"
+        name="iframepage" 
+        frameBorder=0 
+        scrolling=no 
+        width="100%"
+        height="450rem"
+        onLoad="iFrameHeight()"
         src="lib/CV-yu chunju.pdf"  >
 This browser does not support PDFs. Please download the PDF to view it: 
 <a href="">Download PDF</a>
