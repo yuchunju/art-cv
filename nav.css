@@ -65,35 +65,4 @@
 	cursor:help;
 	}
 	
-#content {
-	margin-left:2%;
-	margin-right:2%;
-	padding-top:7rem;
-    
 
-	}
-	
-#iframe {
-
-	-webkit-overflow-scrolling: touch; /* 当手指从触摸屏上移开，会保持一段时间的滚动 */
-    overflow:scroll
-	}
-	
-
-::-webkit-scrollbar {
-    -webkit-appearance: none;
-}
-:-webkit-scrollbar:vertical {
-    width: 1rem;
-}
-::-webkit-scrollbar:horizontal {
-    height: 0;
-}
-::-webkit-scrollbar-thumb {
-    background-color: #99CCFF;
-    border-radius: 1rem;
-
-}
-::-webkit-scrollbar-track {
-    border-radius: 1rem;
-    background-color: #FF66CC;
