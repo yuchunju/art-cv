@@ -19,50 +19,14 @@
    <script src="background.js"></script> 
 
 
-<script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.4.456/build/pdf.min.js"></script>
-  <link rel="stylesheet" href="../../node_modules/pdfjs-dist/web/pdf_viewer.css">
-  <script src="../../node_modules/pdfjs-dist/build/pdf.js"></script>
-  <script src="../../node_modules/pdfjs-dist/web/pdf_viewer.js"></script>
+<script type="text/javascript" src='pdfobject.min.js'></script>
 
-<script>
-var url = "lib/CV-yu chunju.pdf";
 
-// Asynchronous download PDF
-PDFJS.getDocument(url)
-  .then(function(pdf) {
-    return pdf.getPage(1);
-  })
-  .then(function(page) {
-    // Set scale (zoom) level
-    var scale = 1.5;
 
-    // Get viewport (dimensions)
-    var viewport = page.getViewport(scale);
-
-    // Get canvas#the-canvas
-    var canvas = document.getElementById('the-canvas');
-
-    // Fetch canvas' 2d context
-    var context = canvas.getContext('2d');
-
-    // Set dimensions to Canvas
-    canvas.height = viewport.height;
-    canvas.width = viewport.width;
-
-    // Prepare object needed by render method
-    var renderContext = {
-      canvasContext: context,
-      viewport: viewport
-    };
-
-    // Render PDF page
-    page.render(renderContext);
-  });
-</script>
 
 </head>
-
- <body style="background-color:'#99CCFF'">
+<body style="background-color:'#99CCFF'">
+ 
 <nav id="home">
  <li ><a href="https://yuchunju.github.io/art">Home</a></li>
 </nav>
@@ -73,7 +37,8 @@ PDFJS.getDocument(url)
  
  
 <div class="main" id="content" style="background-color:#99CCFF" >
-<canvas id="the-canvas"></canvas>
+
+<div style="height:30rem" id="pdf_viewer"></div>
 
 <a style="color:#FF66CC;
     text-decoration: none;
@@ -81,11 +46,15 @@ PDFJS.getDocument(url)
 	cursor:help;" href="lib/CV-yu chunju.pdf">Click me! Download PDF!</a>
 
 </div>
-<script type="text/javascript" src="pdf.js"></script>
-<script type="text/javascript" src="pdf.js"></script>
-<script type="text/javascript">
-    PDFJS.workerSrc = "/path/to/pdf.worker.js";
-</script>
-
 </body>
+
+<script type="text/javascript">
+    if(PDFObject.supportsPDFs){
+        // PDF嵌入到网页指定id
+        PDFObject.embed("lib/CV-yu chunju.pdf", "#pdf_viewer" );
+    } else {
+    	alert("Click me! Download PDF!");
+        location.href = "lib/CV-yu chunju.pdf";
+    }
+</script>
 </html>
