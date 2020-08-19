@@ -38,7 +38,11 @@
  
 <div class="main" id="content" style="background-color:#99CCFF" >
 
-<div style="height:30rem" id="pdf_viewer"></div>
+<iframe frameBorder="0" 
+        scrolling="yes" 
+        style="width:100%;height:30rem;"
+        src="lib/CV-yu chunju.pdf"></iframe>
+
 
 <a style="color:#FF66CC;
     text-decoration: none;
@@ -48,12 +52,5 @@
 </div>
 </body>
 
-<script type="text/javascript">
-    if(PDFObject.supportsPDFs){
-        // PDF嵌入到网页指定id
-        PDFObject.embed("lib/CV-yu chunju.pdf", "#pdf_viewer" );
-    } else {
-        location.href = "/canvas";
-    }
-</script>
+
 </html>
