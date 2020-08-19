@@ -71,36 +71,24 @@
 	padding-top:7rem;
     
 	-webkit-overflow-scrolling: touch; /* 当手指从触摸屏上移开，会保持一段时间的滚动 */
-	
+
 	}
 	
-.rows {
-height: 230px;
-overflow: hidden;
-overflow-y: auto;
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
 }
-.rows::-webkit-scrollbar-track-piece {
-background-color: rgba(0, 0, 0, 0);
-border-left: 1px solid rgba(0, 0, 0, 0);
+:-webkit-scrollbar:vertical {
+    width: 12px;
 }
-.rows::-webkit-scrollbar {
-width: 5px;
-height: 13px;
--webkit-border-radius: 5px;
--moz-border-radius: 5px;
-border-radius: 5px;
+::-webkit-scrollbar:horizontal {
+    height: 12px;
 }
-.rows::-webkit-scrollbar-thumb {
-background-color: rgba(0, 0, 0, 0.5);
-background-clip: padding-box;
--webkit-border-radius: 5px;
--moz-border-radius: 5px;
-border-radius: 5px;
-min-height: 28px;
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    border: 2px solid #ffffff;
 }
-.rows::-webkit-scrollbar-thumb:hover {
-background-color: rgba(0, 0, 0, 0.5);
--webkit-border-radius: 5px;
--moz-border-radius: 5px;
-border-radius: 5px;
-}
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #ffffff;
