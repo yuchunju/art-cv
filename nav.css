@@ -18,9 +18,9 @@
 	}
 #home li:hover{
 	background:url('lib/pic/me04.png');
-    background-size:80%;
+    background-size:65%;
     background-repeat:no-repeat;
-	padding:5rem;
+	padding:4rem;
 }	
 
 #home li a{
@@ -50,9 +50,9 @@
 	}
 #next li:hover{
 	background:url('lib/pic/me04.png');
-    background-size:80%;
+    background-size:70%;
     background-repeat:no-repeat;
-	padding:5rem;
+	padding:4rem;
 }	
 
 #next li a{
