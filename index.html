@@ -14,12 +14,13 @@
   <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
    <script src="js/bootstrap.min.js"></script>  
    <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
-   
-   
+
    <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.4.456/build/pdf.min.js"></script>
    <script src="background.js"></script> 
 
- 
+
+<script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.4.456/build/pdf.min.js"></script>
+<script>PDFObject.embed("lib/CV-yu chunju.pdf", "#pdf");</script>
 
 </head>
 
@@ -34,13 +35,10 @@
  
  
 <div class="main" id="content" style="background-color:#99CCFF" >
-<iframe frameBorder=0 
-        scrolling=yes 
-        width="100%"
-        height="450rem"
-        src="lib/CV-yu chunju.pdf"  >
-
-</iframe>
+<object style="width:100%; height:30rem" data='lib/CV-yu chunju.pdf'>
+    <p>Oops! Your browser doesn't support PDFs!</p>
+    <p><a href="lib/CV-yu chunju.pdf">Download Instead</a></p>
+</object>
 
 <a style="color:#FF66CC;
     text-decoration: none;
