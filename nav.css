@@ -51,7 +51,7 @@ nav li:hover{
 	background:url('lib/pic/me04.png');
     background-size:contain;
     background-repeat:no-repeat;
-	padding:3rem;
+	padding:2rem;
 }	
 
 nav li a{
@@ -66,12 +66,14 @@ nav li a{
 	
 	
 #warn{
-	position: relative;
-	text-align: inherit;
+	position: absolute;
+	text-align: left;
+	left:2.5rem;
 	top:7rem;
 	display:block;
 	text-decoration: none;
 	color:#fff;
+	font-size:0.8rem;
 	font-weight:bold;
 
 	}
