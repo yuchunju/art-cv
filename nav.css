@@ -2,28 +2,59 @@
 /* CSS Document */
 
 
-#home{
+select {
+
+          float:right; 
+		  background:none;
+		  color:#fff;
+	      font-weight:bold;
+		  border:none;
+
+	}
+	
+
+
+select option {
+	      background:none;
+		  color:#ff85d2;
+	      font-weight:bold;
+		  border:none;	
+	      cursor:help; 
+	
+	}
+
+
+select:focus {
+	      background:none;
+	      cursor:help;
+          outline: none;
+}
+
+
+
+
+nav{
 	width:windowWidth;
     float:left;
 	}
 	
-#home li{
+nav li{
 	display:block;
 	background:url('lib/pic/me03.png');
-    background-size:103%;
+    background-size:contain;
     background-repeat:no-repeat;
 	padding:2rem;
 	transition-property:background-img;
     float:left;
 	}
-#home li:hover{
+nav li:hover{
 	background:url('lib/pic/me04.png');
-    background-size:65%;
+    background-size:contain;
     background-repeat:no-repeat;
-	padding:4rem;
+	padding:3rem;
 }	
 
-#home li a{
+nav li a{
 	width:100%;
 	height:100%;
 	display:block;
@@ -33,36 +64,15 @@
 	cursor:help;
 	}
 	
-
-#next{
-	width:windowWidth;
-    float:left;
-	}
 	
-#next li{
-	display:block;
-	background:url('lib/pic/me03.png');
-    background-size:113%;
-    background-repeat:no-repeat;
-	padding:2rem;
-	transition-property:background-img;
-    float:left;
-	}
-#next li:hover{
-	background:url('lib/pic/me04.png');
-    background-size:70%;
-    background-repeat:no-repeat;
-	padding:4rem;
-}	
-
-#next li a{
-	width:100%;
-	height:100%;
+#warn{
+	position: relative;
+	text-align: inherit;
+	top:7rem;
 	display:block;
 	text-decoration: none;
 	color:#fff;
 	font-weight:bold;
-	cursor:help;
+
 	}
 	
-
