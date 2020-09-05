@@ -3,7 +3,8 @@
 
 
 select {
-
+	      position:relative;
+          top:.5rem;
           float:right; 
 		  background:none;
 		  color:#fff;
@@ -34,6 +35,8 @@ select:focus {
 
 
 nav{
+	position:relative;
+    top:1rem;
 	width:windowWidth;
     float:left;
 	}
