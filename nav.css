@@ -88,18 +88,21 @@ ul {
     position:absolute;
     top:6rem;
     right:2.5%;
-	 cursor:help; 
-	 font-size:0.8rem;
+	 font-size:0.6rem;
 }	 
 
 ul li{
 float: left;
 list-style-type:none;
 margin-left: 1rem;
-cursor:help; 
 }	
 
-ul li:hover{
-padding: .3rem;
+ul li a{
+color: #FFFFFF;
+}
+
+ul li a:hover{
+	color:#FF66CC;
+	cursor:help; 
 }
 	
