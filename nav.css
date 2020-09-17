@@ -5,33 +5,31 @@ body{
 }
 
 
-select {
-	      position:relative;
-          top:.5rem;
-          float:right; 
-		  background:none;
-		  color:#fff;
-	      font-weight:bold;
-		  border:none;
+button{
+position: relative;
+background:none;
+border: none;
+float: right;
+top: .8rem;
+}
 
-	}
-	
+button:hover{
+	border: none;
+	background: none;
+	padding-top: .3rem;
+}
 
+button:focus{
+	border: none;
+	background-color:#3F98F3;
+	padding-top: .3rem;
+	outline: none;
+	border-radius:50%
+}
 
-select option {
-	      background:none;
-		  color:#ff85d2;
-	      font-weight:bold;
-		  border:none;	
-	      cursor:help; 
-	
-	}
-
-
-select:focus {
-	      background:none;
-	      cursor:help;
-          outline: none;
+#it,#zh,#en{
+	position: relative;
+   right: .5rem;
 }
 
 
@@ -66,7 +64,6 @@ nav li a{
 	display:block;
 	text-decoration: none;
 	color:#fff;
-	font-weight:bold;
 	cursor:help;
 	}
 nav li a:hover{
@@ -74,7 +71,7 @@ nav li a:hover{
    text-decoration:underline;
 	}	
 
-	
+
 	
 #warn{
 	position: absolute;
@@ -85,7 +82,24 @@ nav li a:hover{
 	text-decoration: none;
 	color:#fff;
 	font-size:0.8rem;
-	font-weight:bold;
-
 	}
+
+ul {
+    position:absolute;
+    top:6rem;
+    right:2.5%;
+	 cursor:help; 
+	 font-size:0.8rem;
+}	 
+
+ul li{
+float: left;
+list-style-type:none;
+margin-left: 1rem;
+cursor:help; 
+}	
+
+ul li:hover{
+padding: .3rem;
+}
 	
