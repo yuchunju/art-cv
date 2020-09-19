@@ -10,26 +10,27 @@ position: relative;
 background:none;
 border: none;
 float: right;
-top: .8rem;
+top: 10px;
+right: 10px;
+z-index: 999;
+width: 30px;
+
 }
 
 button:hover{
 	border: none;
 	background: none;
-	padding-top: .3rem;
+	padding-top: 5px;
+	
 }
 
-button:focus{
+button:focus,button:active{
 	border: none;
 	background-color:#3F98F3;
-	padding-top: .3rem;
+	padding-top: 5px;
 	outline: none;
-	border-radius:50%
-}
+	border-radius:50%;
 
-#it,#zh,#en{
-	position: relative;
-   right: .5rem;
 }
 
 
@@ -37,7 +38,7 @@ button:focus{
 
 nav{
 	position:relative;
-    top:1rem;
+    top:10px;
 	width:windowWidth;
     float:left;
 	}
@@ -47,7 +48,7 @@ nav li{
 	background:url('lib/pic/me03.png');
     background-size:contain;
     background-repeat:no-repeat;
-	padding:2rem;
+	padding:30px;
 	transition-property:background-img;
     float:left;
 	}
@@ -55,7 +56,7 @@ nav li:hover{
 	background:url('lib/pic/me04.png');
     background-size:contain;
     background-repeat:no-repeat;
-	padding:2rem;
+	padding:30px;
 }	
 
 nav li a{
@@ -77,24 +78,24 @@ nav li a:hover{
 	position: absolute;
 	text-align: right;
 	right:2.5%;
-	top:7.8rem;
+	top:122px;
 	display:block;
 	text-decoration: none;
 	color:#fff;
-	font-size:0.8rem;
+	font-size:8px;
 	}
 
 ul {
     position:absolute;
-    top:6rem;
+    top:100px;
     right:2.5%;
-	 font-size:0.6rem;
+	 font-size:6px;
 }	 
 
 ul li{
 float: left;
 list-style-type:none;
-margin-left: 1rem;
+margin-left: 10px;
 }	
 
 ul li a{
