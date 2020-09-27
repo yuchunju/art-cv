@@ -14,15 +14,15 @@ function windowResized() {
 
 
 function setup() {
-  canvas = createCanvas(windowWidth, windowHeight);
+  canvas = createCanvas(windowWidth, 800);
   canvas.position(0,0);
   canvas.style('z-index','-1');
 
     img = new Image();
     img.src = "lib/pic/day03.png";
- 
-	
-	
+
+
+
 for (let i = 0; i < numBalls; i++) {
     balls[i] = new Ball(
       random(width),
@@ -34,7 +34,7 @@ for (let i = 0; i < numBalls; i++) {
   }
   noStroke();
   fill(255, 204);
-	
+
   }
 
 
@@ -43,7 +43,7 @@ for (let i = 0; i < numBalls; i++) {
 
 function draw() {
 	background('#99CCFF');
-	
+
   balls.forEach(ball => {
     ball.collide();
     ball.move();
@@ -108,7 +108,7 @@ class Ball {
 
   display() {
    drawingContext.drawImage(img,this.x, this.y, this.diameter, this.diameter);
-		
+
   }
 }
 
