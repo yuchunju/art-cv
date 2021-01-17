@@ -4,42 +4,42 @@
 <head>
    <title>Yu Chunju - cv</title>
 
-   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
-   <meta http-equiv="Cache-Control" content="no-transform" /> 
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="Cache-Control" content="no-transform" />
    <meta http-equiv="Cache-Control" content="no-siteapp" />
    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes" />
    <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"rel="stylesheet"type="text/css"/>
    <link href="nav.css"rel="stylesheet"type="text/css">
-   
+
    <link rel="shortcut icon" href="https://github.com/yuchunju/art/blob/master/lib/me01.png?raw=true">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	
+
   <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-   
+
    <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
 
-   <script src="background.js"></script> 
+   <script src="background.js"></script>
 </head>
-	
+
 <body style="background-color:'#99CCFF'">
- 
+
     <button class="translate" id="it"><img src="lib/it.png"></button>
     <button class="translate" id="zh"><img src="lib/zh.png"></button>
     <button class="translate" id="en"><img src="lib/en.png" ></button>
-	
+
 <nav>
  <li ><a href="https://yuchunju.github.io/art" class="lang" key="text1">Home</a></li>
  <li ><a href="https://yuchunju.github.io/art-contact" class="lang" key="text2">Next</a></li>
 
 </nav>
- 
- 
- 
-<div id="content"  >
+
+
+
+<div id="content">
 <a id="warn" class="lang" key="text3"></a>
 <iframe style="width:95%;height:410px;position:absolute; top:140px; left:2.5%; bottom:0; right:0; border:none; margin:0; padding:0; overflow:visible; "
-        scrolling="yes" 
+        scrolling="yes"
         src="CV-yu chunju.html"
         marginwidth="0"
         marginheight="0" >
@@ -47,15 +47,15 @@
 </div>
 
 <ul >
-<li ><a id="download" href="lib/CV - yu chunju.pdf" target="_blank" ><img src="lib/en.png" >&nbsp;<i class="fa fa-download" ></i> PDF</a></li>
+<li ><a id="download" href="lib/CV-yu chunju.pdf" target="_blank" ><img src="lib/en.png" >&nbsp;<i class="fa fa-download" ></i> PDF</a></li>
 
 <li><a id="download" href="lib/简历 - 余春菊.pdf" target="_blank"><img src="lib/zh.png">&nbsp;<i class="fa fa-download" ></i> PDF</a></li>
 
 <li><a id="download" href="lib/CV - yu chunju - Italiano.pdf" target="_blank"><img src="lib/it.png">&nbsp;<i class="fa fa-download" ></i> PDF</a></li>
-</ul> 
-	
-	
-	
+</ul>
+
+
+
 <script>
 var arrLang = {
   "en": {
@@ -80,7 +80,7 @@ var arrLang = {
 var lang = "en";
 // Check for localStorage support
 if('localStorage' in window){
-   
+
    var usrLang = localStorage.getItem('uiLang');
    if(usrLang) {
        lang = usrLang
@@ -112,8 +112,8 @@ console.log(lang);
             $(this).text(arrLang[lang][$(this).attr("key")]);
           });
         });
-	
-</script>	
+
+</script>
 
 </body>
 </html>
