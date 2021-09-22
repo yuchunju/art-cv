@@ -14,7 +14,7 @@ function windowResized() {
 
 
 function setup() {
-  canvas = createCanvas(windowWidth, 800);
+  canvas = createCanvas(windowWidth, windowHeight);
   canvas.position(0,0);
   canvas.style('z-index','-1');
 
